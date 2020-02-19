@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=Ranchers&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Buenard&display=swap');
+/* General styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #a6d6ca;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Heading */
+h1 {
+  padding: 1rem 0;
+  margin-bottom: 3rem;
+  font-family: 'Ranchers', cursive;
+  text-transform: uppercase;
+  font-size: 70px;
+  line-height: 111%;
+  color: #939393;
+  /* text-shadow: 4px 4px #fff, -4px 4px #fff, 4px -4px #fff, -4px -4px #fff,
+    4px 4px 4px #555; */
+  text-shadow: 4px 0 0 #fff, -4px 0 0 #fff, 0 4px 0 #fff, 0 -4px 0 #fff,
+    4px 4px 0 #fff, -4px -4px 0 #fff, 4px -4px 0 #fff, -4px 4px 0 #fff,
+    4px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.dad-word {
+  color: #00a0d2;
+}
+.joke-word {
+  color: #ffa800;
+}
+
+/* Joke area */
+.joke-area {
+  font-family: 'Buenard', serif;
+  padding: 0 2rem;
+  margin: 0 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+  min-height: 250px;
+  background: #e0f9e2;
+  opacity: 0.75;
+  border-radius: 20px;
+  color: #213c42;
+  font-size: 1.2rem;
+}
+/* Button area */
+.danger {
+  padding: 1rem 0;
+  margin-top: 1rem;
+  font-family: 'Buenard', serif;
+  font-size: 1rem;
+  opacity: 0.7;
+}
+.danger span {
+  color: #ff0606;
+}
+.btn-joke {
+  font-family: 'Buenard', serif;
+  color: #fff;
+  font-size: 1.3rem;
+  padding: 0.8rem 2rem;
+  background: #126782;
+  border-radius: 20px;
+  border: none;
+  transition: 0.2s ease-out;
+}
+.btn-joke:active,
+.btn-joke:focus {
+  border: none;
+  outline: 0;
+}
+.btn-joke:hover {
+  background: #158baf;
+}
+
+@media screen and (max-width: 992px) {
+  .joke-area {
+    width: 80vw;
+  }
+}
